@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.hide-scrollbar {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  
+.swiper-button-prev{
+    display: none !important;
+}
+.swiper-button-next{
+    display: none !important;
+}
+
+.icon{
+    color: black;
+    padding: 5px;
+}
+.icon:hover{
+    transition: all 0.5s;
+    background-color: black;
+    color: white  !important;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.sidebartext {
+  position: relative;
+  border-bottom: 0;
+}
+
+.sidebartext::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: black;
+  transition: width 0.5s;
+}
+
+.sidebartext:hover::before {
+  width: 100%;
+}
