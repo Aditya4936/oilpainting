@@ -24,10 +24,10 @@ const data = [
 const Section1 = () => {
   return (
     <div className="px-5 pt-16 2xl:container ">
-      <div className="flex  md:flex-row flex-col justify-center w-full md:gap-24 gap-8">
+      <div className="flex  md:flex-row flex-col justify-center w-full ">
         {/* Left Sticky Section */}
-        <div className="md:w-1/2 md:relative">
-          <div className="sticky top-20 md:flex flex-col items-end text-end gap-10 hidden">
+        <div className="md:w-1/2 md:relative ">
+          <div className="sticky top-20 md:flex flex-col items-end text-end gap-10 hidden md:mr-10">
             <p className="text-[65px] leading-[75px] font-extralight">
               WE <br /> CREATE <br />
               BEAUTIFUL <br /> WORKS <br />
@@ -50,7 +50,7 @@ const Section1 = () => {
           </div>
         </div>
         {/* Right Content Section */}
-        <div className="flex flex-col gap-10 md:w-1/2">
+        <div className="flex flex-col gap-10 md:w-1/2 mt-4 md:mt-0">
           <div className="md:font-normal font-light text-lg md:text-xl ">
             OilPixel, a digital painting studio, paints your story on a blank
             canvas, vividly manifesting every single bit of your persona. Our
@@ -69,7 +69,7 @@ const Section1 = () => {
           {data.map((item) => (
             <div key={item.id} className="flex flex-col gap-5 w-full">
               {/* Item Name */}
-              <p className="text-lg font-bold hover:underline">{item.name}</p>
+              <p className="text-xl font-bold sidebar0text w-fit ">{item.name}</p>
 
               {/* Image Carousel */}
               <div className="flex overflow-x-auto items-center hide-scrollbar w-full">
@@ -78,7 +78,7 @@ const Section1 = () => {
                     key={idx}
                     src={img}
                     alt={`Image of ${item.name} - ${idx + 1}`}
-                    className="aspect-square w-64"
+                    className=" aspect-square md:w-64 w-48"
                   />
                 ))}
 

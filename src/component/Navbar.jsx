@@ -17,24 +17,20 @@ const Navbar = () => {
   };
 
   return (
-     <nav className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
+    <nav className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
         <a href="/">
-        
-        <img
-          src="https://www.oilpixel.com/ast/themes/oilpixel/images/logo.svg"
-          alt="logo"
-          className="max-w-full"
-        />
+          <img
+            src="https://www.oilpixel.com/ast/themes/oilpixel/images/logo.svg"
+            alt="logo"
+            className="max-w-full"
+          />
         </a>
 
         <div className="flex flex-row items-center gap-5">
           <p>Order Now</p>
-          <div
-            className="bg-black p-2 rounded-full cursor-pointer"
-            onClick={toggleDrawer}
-          >
-            <GiHamburgerMenu size={20} color="white" />
+          <div className="rounded-button  " onClick={toggleDrawer}>
+            <GiHamburgerMenu />
           </div>
         </div>
 
@@ -44,9 +40,9 @@ const Navbar = () => {
             isDrawerOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex justify-start p-4">
-            <button onClick={toggleDrawer} className="p-2">
-              <AiOutlineClose className="bg-black text-white text-4xl p-1 rounded-full" />
+          <div className="flex justify-start m-4">
+            <button onClick={toggleDrawer} className="rounded-button">
+              <AiOutlineClose  />
             </button>
           </div>
           <div className="flex md:flex-row flex-col md:items-start items-start gap-16 justify-around mt-10 md:py-20 px-[8%]  uppercase  ">
@@ -54,9 +50,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="/"
-                  className="lg:text-2xl md:text-xl text-lg sidebartext" 
+                  className="lg:text-2xl md:text-xl text-lg sidebartext"
                 >
-                Home
+                  Home
                 </a>
               </li>
               {/* <li>
@@ -118,10 +114,10 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="flex flex-row gap-8">
-                <BsInstagram  cursor={"pointer"} className="icon text-4xl" />
-                <BsLinkedin  cursor={"pointer"}  className="icon text-4xl"/>
-                <BsPinterest  cursor={"pointer"}  className="icon text-4xl"/>
-                <BsFacebook  cursor={"pointer"}  className="icon text-4xl"/>
+                <BsInstagram cursor={"pointer"} className="icon text-4xl" />
+                <BsLinkedin cursor={"pointer"} className="icon text-4xl" />
+                <BsPinterest cursor={"pointer"} className="icon text-4xl" />
+                <BsFacebook cursor={"pointer"} className="icon text-4xl" />
               </div>
             </div>
           </div>

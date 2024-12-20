@@ -38,7 +38,7 @@ const Section3 = () => {
     <div className="md:mt-[60px]  container">
       <div className="flex flex-col md:flex-row items-center md:items-start w-full">
         {/* Text Section */}
-        <div className="text-black   py-6 md:py-0  flex flex-col md:items-end items-start  md:w-[41%] text-right">
+        <div className="text-black   py-6 md:py-0  flex flex-col md:items-end items-start  md:w-1/2 text-right">
           {/* Title */}
           <p className="md:hidden block font-extralight text-3xl  leading-tight w-full mt-10 uppercase text-start ">
             our Customer Stories Near To Our heart

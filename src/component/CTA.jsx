@@ -8,8 +8,8 @@ const CTA = () => {
           Make Your Painting
         </h1>
         <div className="mb-6 w-32 h-[2px] rounded-full bg-white mx-auto" />
-        <div>
-            <button className="bg-white text-black py-2 px-5 capitalize hover:bg-black hover:border-white border hover:text-white hover:transition-colors duration-700">
+        <div className="white-button">
+            <button className="white-button-content">
                 Order Now
             </button>
         </div>

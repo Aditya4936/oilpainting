@@ -4,7 +4,7 @@ import { BsPlayBtn } from "react-icons/bs";
 
 const Section2 = () => {
   return (
-    <div className="mt-[60px] 2xl:container  ">
+    <div className="mt-[60px] 2xl:container">
       <div className="flex flex-col md:flex-row lg:h-screen items-stretch w-full h-full">
         {/* Image Section */}
         <div className="w-full md:w-1/2 h-full">
@@ -16,12 +16,12 @@ const Section2 = () => {
         </div>
 
         {/* Text Section */}
-        <div className="w-full md:w-1/2 bg-black h-full text-white flex flex-col justify-center items-start px-6 md:px-[8%] py-10 md:py-20">
+        <div className="w-full md:w-1/2 bg-black  text-white flex flex-col justify-center items-start px-6 md:px-[8%] py-10 md:py-10">
           {/* Title */}
-          <p className="block md:hidden font-extralight text-4xl leading-tight uppercase text-center mb-8">
+          <p className="block md:hidden font-extralight text-4xl leading-tight uppercase text-center mb-5">
             Cherish special moments of your life
           </p>
-          <p className="hidden md:block text-[55px] lg:text-[65px] lg:leading-[60px] font-extralight leading-tight uppercase text-left mb-10">
+          <p className="hidden md:block text-[55px] lg:text-[60px] lg:leading-[60px] font-extralight leading-tight uppercase text-left mb-10">
             Cherish <br /> special <br /> moments <br /> of your <br /> life
           </p>
 
@@ -34,8 +34,10 @@ const Section2 = () => {
           </p>
 
           {/* Button */}
-          <div className="bg-white text-lg md:text-xl text-black py-3 px-6 border-2 rounded-sm cursor-pointer hover:bg-black hover:text-white hover:border-white transition-all duration-300 flex gap-3 items-center">
-            Watch The Making <BsPlayBtn className="text-2xl md:text-3xl" />
+          <div className="white-button flex items-center gap-2 ">
+            <span className="white-button-content flex items-center gap-2">
+              Watch The Making <BsPlayBtn className="text-2xl md:text-3xl" />
+            </span>
           </div>
         </div>
       </div>

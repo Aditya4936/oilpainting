@@ -23,8 +23,11 @@ const Footer = () => {
               className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[500px] py-2 px-5 bg-transparent rounded-sm mb-5 outline-0 border-0 border-b-[1px] border-b-black text-center"
             />
           </>
-          <button className="mb-[50px] bg-black text-white font-bold py-2 px-5 border-2 uppercase rounded-sm cursor-pointer hover:bg-white hover:text-red-600 hover:border-black transition-all duration-700">
+          <button className="button my-10">
+            <span className="button-content">
+
             Sign Up
+            </span>
           </button>
 
           {/* Links Section */}
@@ -49,16 +52,16 @@ const Footer = () => {
           </div>
           {/* social media icon */}
           <div className=" flex flex-wrap justify-center gap-3 sm:gap-5 pt-10 lg:text-2xl text-xl">
-            <div className=" icon">
+            <div className=" icon1">
               <CiFacebook />
             </div>
-            <div className=" icon">
+            <div className=" icon1">
                 <CiTwitter />
             </div>
-            <div className=" icon">
+            <div className=" icon1">
                 <CiInstagram />
             </div>
-            <div className=" icon">
+            <div className=" icon1">
                 <CiYoutube />
             </div>
             

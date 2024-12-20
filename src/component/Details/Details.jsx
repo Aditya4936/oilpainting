@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import img1_res from "../../assets/Details/adult_res.jpg";
 import img1_org from "../../assets/Details/adult_org.jpg";
 import img2_res from "../../assets/Details/kid_res.jpg";
@@ -6,18 +6,56 @@ import img2_org from "../../assets/Details/kid_org.jpg";
 import { FiInstagram } from "react-icons/fi";
 import { AiFillPinterest } from "react-icons/ai";
 import Button from "../Button";
-import { FaArrowLeftLong, FaArrowRightLong, FaStar } from "react-icons/fa6";
+import {
+  FaArrowLeftLong,
+  FaArrowRightLong,
+  FaPlus,
+  FaStar,
+} from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
 import Details_section_1 from "./Details_section_1";
 import CTA from "../CTA";
 
 const Details = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [showIcon, setShowIcon] = useState(false);
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left; // X-coordinate within the image
+    const y = e.clientY - rect.top; // Y-coordinate within the image
+    setPosition({ x, y });
+  };
+
+  const handleMouseEnter = () => {
+    setShowIcon(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowIcon(false);
+  };
   return (
     <>
       <div className="2xl:container container md:px-0 lg:mt-[120px] mt-[80px]">
         <div className="flex flex-col lg:flex-row gap-4 w-full items-start">
           <div className="lg:w-1/2 w-full">
-            <img src={img1_res} alt="adult_res" className="w-full" />
+            <div
+              className="imghover"
+              onMouseMove={handleMouseMove}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
+              <img src={img1_res} alt="Hoverable" />
+              {showIcon && (
+                <FaPlus
+                  className="icon text-2xl"
+                  style={{
+                    left: `${position.x}px`,
+                    top: `${position.y}px`,
+                  }}
+                />
+              )}
+            </div>
             <div className="flex gap-4 md:justify-end mt-3 ">
               <span>Share</span>
               <AiFillPinterest className="text-2xl text-black" />
@@ -75,9 +113,9 @@ const Details = () => {
           </div>
         </div>
       </div>
-        <div>
-          <Details_section_1 />
-        </div>
+      <div>
+        <Details_section_1 />
+      </div>
       <div>
         <CTA />
       </div>

@@ -21,11 +21,12 @@
     display: none !important;
 }
 
-.icon{
+.icon1{
     color: black;
     padding: 5px;
 }
-.icon:hover{
+.icon1:hover{
+  animation: ease-in-out 0.5s;
     transition: all 0.5s;
     background-color: black;
     color: white  !important;
@@ -44,11 +45,138 @@
   bottom: 0;
   left: 0;
   width: 0;
-  height: 1px;
+  height: 2px;
   background-color: black;
   transition: width 0.5s;
 }
 
 .sidebartext:hover::before {
   width: 100%;
+}
+
+/* on imge hover show pluse icon in laptop and tv screen */
+.imghover {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  cursor: none; /* Hide the default cursor */
+}
+
+.imghover img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.icon {
+  position: absolute;
+  
+  color: rgba(0, 0, 0, 0.7); 
+  background-color: antiquewhite;
+  border-radius: 50%; 
+  pointer-events: none;
+  transform: translate(-50%, -50%); /* Perfectly center the icon */
+}
+
+
+/* button css */
+/* From Uiverse.io by Madflows */ 
+.button {
+  position: relative;
+  overflow: hidden;
+  padding:  10px 25px;
+
+  background: #000;
+  border: none;
+  cursor: pointer;
+  border: 1px solid #000;
+
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-weight: 600; 
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 0;
+  transition: transform 0.475s ease; 
+}
+
+.button:hover::before {
+  transform: scaleX(1); /* Expand background */
+}
+
+.button:hover .button-content {
+  color: #000; /* Optional: Change text color on hover */
+}
+
+/* white back */
+.white-button {
+  position: relative;
+  overflow: hidden;
+  padding:  10px 25px;
+  background: #fff; /* Base background is white */
+  border: none;
+  cursor: pointer;
+  border: 1px solid #fff; /* Black border */  
+}
+
+.white-button-content {
+  position: relative;
+  z-index: 1;
+  color: #000; /* Text color for white background */
+  font-weight: 600; /* Optional for styling */
+}
+
+.white-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #000; /* Black background on hover */
+  z-index: 0;
+  transition: transform 0.475s ease; /* Smooth transition */
+}
+
+.white-button:hover::before {
+  transform: scaleX(1); /* Expand background */
+  border-color: #fff; /* White border on hover */
+}
+
+.white-button:hover .white-button-content {
+  color: #fff; /* Change text color to white for better contrast */
+}
+
+.rounded-button{
+  color: white;
+  padding: 5px;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  border: 1px solid black;
+}
+.rounded-button:hover{
+animation: ease-in-out 0.5s;
+  transition: all 0.5s;
+  background-color: white;
+  color: black  !important;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid black;
 }

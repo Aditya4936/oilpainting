@@ -12,8 +12,8 @@ const Section5 = () => {
           <span className="block md:hidden">it's all about colorful words</span>
         </div>
         <div className="h-[2px] rounded-full bg-white w-1/3" />
-        <button className="bg-white text-black px-5 py-3 mt-[30px] text-sm hover:transition-all duration-300 hover:bg-black hover:text-white border border-white">
-          Read More
+        <button className="white-button mt-10">
+          <span className='white-button-content'>Read More</span>
         </button>
       </div>
 
