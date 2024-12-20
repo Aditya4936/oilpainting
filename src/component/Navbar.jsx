@@ -114,10 +114,10 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="flex flex-row gap-8">
-                <BsInstagram cursor={"pointer"} className="icon text-4xl" />
-                <BsLinkedin cursor={"pointer"} className="icon text-4xl" />
-                <BsPinterest cursor={"pointer"} className="icon text-4xl" />
-                <BsFacebook cursor={"pointer"} className="icon text-4xl" />
+                <BsInstagram cursor={"pointer"} className="icon1 text-4xl" />
+                <BsLinkedin cursor={"pointer"} className="icon1 text-4xl" />
+                <BsPinterest cursor={"pointer"} className="icon1 text-4xl" />
+                <BsFacebook cursor={"pointer"} className="icon1 text-4xl" />
               </div>
             </div>
           </div>
