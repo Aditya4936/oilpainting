@@ -18,7 +18,7 @@ const Section2 = () => {
         {/* Text Section */}
         <div className="w-full md:w-1/2 bg-black  text-white flex flex-col justify-center items-start px-6 md:px-[8%] py-10 md:py-10">
           {/* Title */}
-          <p className="block md:hidden font-extralight text-4xl leading-tight uppercase text-center mb-5">
+          <p className="block md:hidden font-extralight text-3xl leading-tight uppercase text-left mb-5">
             Cherish special moments of your life
           </p>
           <p className="hidden md:block text-[55px] lg:text-[60px] lg:leading-[60px] font-extralight leading-tight uppercase text-left mb-10">
@@ -26,10 +26,10 @@ const Section2 = () => {
           </p>
 
           {/* Divider */}
-          <div className="h-[2px] w-1/3 md:w-[100px] bg-white mb-10"></div>
+          <div className="h-[2px] w-1/3 md:w-[100px] bg-white mb-5"></div>
 
           {/* Subtitle */}
-          <p className="font-light text-lg md:text-2xl mb-10 w-full md:w-[320px] text-center md:text-left">
+          <p className="font-light text-lg md:text-2xl mb-10 w-full md:w-[320px] text-left">
             Digitally Drawn Handmade Couple Portrait Painting
           </p>
 
