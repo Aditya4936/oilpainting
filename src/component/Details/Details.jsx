@@ -40,7 +40,7 @@ const Details = () => {
         <div className="flex flex-col lg:flex-row gap-4 w-full items-start">
           <div className="lg:w-1/2 w-full">
             <div
-              className="imghover"
+              className="imghover "
               onMouseMove={handleMouseMove}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
@@ -48,7 +48,7 @@ const Details = () => {
               <img src={img1_res} alt="Hoverable" />
               {showIcon && (
                 <FaPlus
-                  className="icon text-2xl"
+                  className="icon text-2xl md:block hidden"
                   style={{
                     left: `${position.x}px`,
                     top: `${position.y}px`,
